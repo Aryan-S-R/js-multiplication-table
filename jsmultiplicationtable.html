@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                 color: red;
+            }
+            label{
+                color: blue;
+            }
+            input{
+                padding: 4px;
+            }
+        </style>
+    </head>
+<body>
+<h1>JS Multiplication Table</h1>
+<label for="input">Enter Number:</label>
+<input name="number1" type="text"><br><br>
+<label for="input">Enter The Limit For Table:</label>
+<input name="number2" type="text"><br><br>
+<button text="submit"  value="Find" onclick="Tharun()">Try it</button>
+
+
+<script>
+    function Tharun(){
+var table = document.getElementsByName('number1')[0].value;
+var length = document.getElementsByName('number2')[0].value;
+document.write("Multiplication table: "+ table);
+
+for( var i = 1; i <= length; i++)
+ document.write("<br>" + table +" * "+ i +" = " + (i * table));
+        }
+
+</script>
+</body>
+</html>
